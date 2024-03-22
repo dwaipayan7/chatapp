@@ -2,7 +2,6 @@ import 'package:chatapp/pages/auth/home_page.dart';
 import 'package:chatapp/pages/auth/login_page.dart';
 import 'package:chatapp/shared/constants.dart';
 import 'package:chatapp/helper/helper_function.dart';
-import 'package:chatapp/shared/constants.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
@@ -63,7 +62,10 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(primaryColor: Constants().primaryColor,
       scaffoldBackgroundColor: Colors.white),
       debugShowCheckedModeBanner: false,
-      home: _isSignedIn? const HomeScreen() : const LoginPage(),
+      home: _isSignedIn? const HomePage() : const LoginPage(),
     );
   }
 }
+
+
+
