@@ -196,7 +196,7 @@ bool _isLoading = false;
           await HelperFunctions.saveUserLoggedInStatus(true);
           await HelperFunctions.saveUserEmailSF(email);
           await HelperFunctions.saveUserNameSF(fullname);
-          nextScreenReplace(context, const HomeScreen());
+          nextScreenReplace(context, const HomePage());
 
         }else{
           showSnackbar(context, Colors.red, value);
